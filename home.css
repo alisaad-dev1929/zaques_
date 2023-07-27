@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    
+    background-color: #e0e0e0;
+    transition: all 0.6s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top_bar {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    height: 5%;
+}
+
+.home,
+.signup,
+.login,
+.versio {
+    text-decoration: none;
+    color: #ff0000;
+    margin: 10px;
+    font-size: 20px;
+}
+
+body.dark {
+    background-color: #030205;
+}
+
+.radio-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 30px; 
+    width: 60px; 
+    padding: 6px;
+    background-color: #27373a;
+    border-radius: 30px; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.radio-btn .radio-inner {
+    position: relative;
+    width: 18px; 
+    height: 18px; 
+    background-color: #ffc207;
+    border-radius: 50%; 
+    transition: all 0.6s;
+}
+
+.radio-btn .radio-inner::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -60%;
+    width: 100%;
+    height: 100%;
+    background-color: #27373a;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.6s;
+}
+
+.radio-btn .radio-inner.test {
+    transform: translateX(calc(60px - 30px));
+}
+
+.radio-btn .radio-inner.test::before {
+    left: -9px;
+    transform: scale(1);
+}
+.about-texts {
+    position: fixed;
+    text-align: center;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    color: rgb(50, 50, 239);
+}
+ 
+
+.versions {
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    color:darkmagenta;
+}
+.version{
+    position: fixed;
+    top: 15%;
+    right: 34%;
+}
+
+.vertical-line{
+    position: relative;
+    display: inline-block;
+    border-right: 7px solid #5217c8;
+    height: 100px;
+    margin-right: 20px;
+    position: fixed;
+    top: 10.4%;
+    right: 43%;
+}
