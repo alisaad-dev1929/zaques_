@@ -130,3 +130,43 @@ body.dark {
     top: 10.4%;
     right: 43%;
 }
+
+/* Existing styles for larger screens */
+/* ... (the styles you posted) ... */
+
+/* Mobile styles using media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+    .top_bar {
+      justify-content: space-around;
+      height: 10%;
+    }
+  
+    .home,
+    .signup,
+    .login,
+    .versio {
+      font-size: 16px;
+    }
+  
+    .about-texts {
+      top: 30%;
+    }
+  
+    .versions {
+      top: 20%;
+      right: 0;
+    }
+  
+    .version {
+      top: 25%;
+      right: 25%;
+    }
+  
+    .vertical-line {
+      top: 15.4%;
+      right: 43%;
+      border-right-width: 4px;
+      height: 80px;
+    }
+  }
+
